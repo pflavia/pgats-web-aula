@@ -1,0 +1,22 @@
+{
+  "name": "pgats-web-aula",
+  "version": "1.0.0",
+  "description": "Projeto da disciplina de Automação WEB da PGATS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Flávia Pinheiro Lobo",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1",
+    "dotenv": "^16.4.5",
+    "regexp": "^1.0.0"
+  }
+}
