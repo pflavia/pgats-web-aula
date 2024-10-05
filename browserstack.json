@@ -1,50 +1,24 @@
 {
     "auth": {
-        "username": "flviapinheirolob_3l9ykF",
-        "access_key": "zKLRdzDdxTFCFpbVfJbq"
+        "username": "flviapinheirolob_aSAKxl",
+        "access_key": "joFhCxx2JXpn99NQsqLs"
     },
     "browsers": [
         {
             "browser": "chrome",
             "os": "Windows 10",
             "versions": [
-                "latest",
-                "latest-1"
+                "latest"
             ]
         },
         {
             "browser": "edge",
             "os": "Windows 10",
             "versions": [
-                "latest",
-                "latest-1"
+                "latest"
             ]
-        },
-        {
-            "browser": "chrome",
-            "os": "OS X Mojave",
-            "versions": [
-                "latest",
-                "latest-1"
-            ]
-        },
-        {
-            "browser": "firefox",
-            "os": "OS X Mojave",
-            "versions": [
-                "latest",
-                "latest-1"
-            ]
-        },
-        {
-            "browser": "firefox",
-            "os": "OS X Catalina",
-            "versions": [
-                "latest",
-                "latest-1"
-            ]
-        }
-    ],
+        } 
+              ],
     "run_settings": {
         "cypress_config_file": "./cypress.config.js",
         "cypress_version":"13.latest",

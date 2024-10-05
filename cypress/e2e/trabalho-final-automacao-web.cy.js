@@ -22,7 +22,7 @@ describe('Automation Exercise', () => {
       .validarHome();
   });
   afterEach(() => {
-    cy.screenshot()
+    cy.screenshot();
 
   });
 
@@ -54,7 +54,7 @@ describe('Automation Exercise', () => {
     cy.screenshot()
     cadastro
       .deletarCadastro()
-      .verificaDeletarCadastro
+      .verificaDeletarCadastro()
 
   });
   it('Test Case 3: Login incorreto', () => {
@@ -105,8 +105,6 @@ describe('Automation Exercise', () => {
     produtos
       .validarTelaProdutos()
       .pesquisarProduto('Shirt')
-
-
   });
   it('Test Case 10: Verificar inscrever e-mail na home', () => {
     inscreverEmail.inscreverEmail()
@@ -115,7 +113,6 @@ describe('Automation Exercise', () => {
     menu.irParaCarrinho();
     inscreverEmail.inscreverEmail()
   });
-
   it('Test Case 12: Adicionar item ao carrinho', () => {
     menu.irParaProdutos();
     produtos
@@ -127,7 +124,6 @@ describe('Automation Exercise', () => {
       .contarNumeroProdutosCarrinho(2)
       .validarProdutoCarrinho(1, 'Rs. 500', '1', 'Rs. 500')
       .validarProdutoCarrinho(3, 'Rs. 1000', '1', 'Rs. 1000')
-
   });
   it('Test Case 13: Adicionar quatro unidades de um produto ao carrinho', () => {
     menu.irParaProdutos();
@@ -139,7 +135,6 @@ describe('Automation Exercise', () => {
       .irParaCarrinhoDuranteInclusaoProdutoTelaDetalhes()
     carrinho.validarProdutoCarrinho(1, 'Rs. 500', '4', 'Rs. 2000')
   });
-
   it('Test Case 14: Comprar com registro na compra', () => {
     menu.irParaProdutos();
     produtos
@@ -166,7 +161,6 @@ describe('Automation Exercise', () => {
       .deletarCadastro()
       .verificaDeletarCadastro()
   });
-
   it('Test Case 15: Comprar com registro antes da comprat', () => {
     menu.irParaCadastrar();
     cadastro
