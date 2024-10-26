@@ -23,7 +23,8 @@ jobs:
             run: yarn run e2e
   
           - uses: actions/upload-artifact@v4
-              11'tvrif: ${{ !cancelled() }} # Only when test failed or cancelledfailure()
+            if: ${{ !cancelled() }}
+            with:
               name: relatorio-de-testes
               path: ./cypress/report
 
