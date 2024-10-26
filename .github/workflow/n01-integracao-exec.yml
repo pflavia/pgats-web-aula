@@ -14,9 +14,9 @@ jobs:
             run: npm install -g yarn
 
           - name: Instalando as dependências
-            run: yarn playwright install
+            run: npm cypress install
 
-          - name: Instalando Playwright
+          - name: Executar yarn
             run: yarn  
 
           - name: Teste E2E (end-to-end)
@@ -25,5 +25,5 @@ jobs:
           - uses: actions/upload-artifact@v4
               11'tvrif: ${{ !cancelled() }} # Only when test failed or cancelledfailure()
               name: relatorio-de-testes
-              path: ./playwright-report
+              path: ./cypress/report
 

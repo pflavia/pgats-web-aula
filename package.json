@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "e2e": "yarn cypress run"
 
-
   },
   "keywords": [],
   "author": "Flávia Pinheiro Lobo",
