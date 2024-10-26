@@ -19,7 +19,7 @@ jobs:
           - name: Executar yarn
             run: yarn  
 
-          - name: Teste E2E (end-to-end)
+          - name: Teste E2E (end-to-end) 
             run: yarn run e2e
   
           - uses: actions/upload-artifact@v4
