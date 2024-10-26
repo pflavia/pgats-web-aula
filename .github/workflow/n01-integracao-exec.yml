@@ -1,0 +1,29 @@
+# CI de Nível 01 - Disparo manual a partir de 1 clique
+
+name: 'Execução Manual'
+
+on:
+    workflow_dispatch:
+
+jobs:
+    e2e-tests:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+          - name: Instalando Yarn
+            run: npm install -g yarn
+
+          - name: Instalando as dependências
+            run: yarn playwright install
+
+          - name: Instalando Playwright
+            run: yarn  
+
+          - name: Teste E2E (end-to-end)
+            run: yarn run e2e
+  
+          - uses: actions/upload-artifact@v4
+              11'tvrif: ${{ !cancelled() }} # Only when test failed or cancelledfailure()
+              name: relatorio-de-testes
+              path: ./playwright-report
+
