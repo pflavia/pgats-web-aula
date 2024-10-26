@@ -1,9 +1,10 @@
 # CI de Nível 01 - Disparo manual a partir de 1 clique
 
-name: 'Execução Manual'
+name: 'Execucao agendada'
 
 on:
-    workflow_dispatch:
+    schedule:
+      - cron: '20 19 * * 6'
 
 jobs:
     e2e-tests:

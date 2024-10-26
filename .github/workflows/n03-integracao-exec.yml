@@ -1,9 +1,12 @@
 # CI de Nível 01 - Disparo manual a partir de 1 clique
 
-name: 'Execução Manual'
+name: 'Execucao por deploy'
 
 on:
-    workflow_dispatch:
+    workflow_run:
+      workflows: ['Execução Manual']
+      types:
+        - completed
 
 jobs:
     e2e-tests:
