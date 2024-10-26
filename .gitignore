@@ -4,10 +4,14 @@ node_modules/
 # relatorios mocha
 mochawesome-report
 
-# relatorios cucumber
+# relatorios 
 cypress/reports/index.html
 cypress/reports/index.html.json
 cypress/reports/cucumber-json/**
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+
 
 # videos
 cypress/videos
